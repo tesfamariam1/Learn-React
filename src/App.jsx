@@ -4,16 +4,16 @@ import { useState } from 'react';
 import AnotherComponent from './AnotherComponent';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   function decrement() {
-    setCount(prevCount => prevCount - 1)
+    setCount(prevCount => prevCount - 1);
   }
   function increment() {
-    setCount(prevCount => prevCount + 1)
+    setCount(prevCount => prevCount + 1);
   }
   const someStyle = {
     background: 'blue',
-  }
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -27,10 +27,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        { true &&
-          <p style={someStyle}>{ 5 }</p>
-        }
-        
+        {true && <p style={someStyle}>{5}</p>}
+
         <a
           className="App-link"
           href="https://reactjs.org"
